@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> // 是C++标准输入输出操纵头文件，专门存放格式化控制台输出的工具函数，搭配std::cout使用，可以实现对输出内容的格式化控制，如设置宽度、精度、填充字符等。
 #include <cstdint>
 #include <string>
 
