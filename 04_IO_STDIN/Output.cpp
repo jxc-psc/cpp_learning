@@ -113,9 +113,13 @@ int main() {
     std::cout << std::scientific << std::setprecision(4);
     std::cout << "Scientific: " << num3 << std::endl;
     
-    std::cout.unsetf(std::ios::fixed | std::ios::scientific); // 恢复默认
-    std::cout << std::setprecision(6); // 恢复默认精度
-
+    // 恢复默认(推荐)
+    std::cout << std::defaultfloat << std::setprecision(6);
+    /*
+    另一种写法
+        std::cout.unsetf(std::ios::fixed | std::ios::scientific); // 恢复默认
+        std::cout << std::setprecision(6); // 恢复默认精度
+    */
 
     // 5.2 设置显示小数点（showpoint）
     // 默认情况下，当浮点数没有小数部分时，cout不会显示小数点。
